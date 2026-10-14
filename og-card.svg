@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#090716"/>
+  <circle cx="930" cy="315" r="230" fill="#241451" stroke="#62f6ff" stroke-width="3"/>
+  <circle cx="930" cy="315" r="160" fill="none" stroke="#ff67cf" stroke-width="5"/>
+  <path d="M700 315h460M930 85v460" stroke="#ffd869" stroke-width="4"/>
+  <text x="70" y="240" fill="#f8f6ff" font-family="Arial Narrow, sans-serif" font-weight="900" font-size="100">SIGNAL</text>
+  <text x="70" y="335" fill="none" stroke="#ff67cf" stroke-width="2" font-family="Arial Narrow, sans-serif" font-weight="900" font-size="100">ENCORE</text>
+  <text x="75" y="400" fill="#62f6ff" font-family="Arial, sans-serif" font-size="22" letter-spacing="5">A 45-SECOND BROWSER MICRO-GAME</text>
+</svg>

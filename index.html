@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130d2d">
+  <meta name="description" content="Signal Encore is a free 45-second browser rhythm micro-game starring original 24-year-old virtual idol EIRA//LUX.">
+  <meta property="og:title" content="Signal Encore — a browser micro-game">
+  <meta property="og:description" content="Catch the signal. Save the encore. Play free in your browser.">
+  <meta property="og:image" content="og-card.svg">
+  <title>Signal Encore — EIRA//LUX</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#game">Skip to game</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Signal Encore home">SIGNAL//ENCORE</a>
+    <nav aria-label="Primary">
+      <a href="#game">Play</a>
+      <a href="#character">EIRA</a>
+      <a href="#offer">Support pack</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A 45-second browser micro-game · EXP-005</p>
+        <h1 id="hero-title">Catch the signal.<br><span>Save the encore.</span></h1>
+        <p class="lede">EIRA//LUX is live, the uplink is breaking, and three light channels are all that stand between a dropped stream and one last song.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#game">Play the free demo</a>
+          <a class="button ghost" href="#offer">See the digital offer</a>
+        </div>
+        <p class="microcopy">No account, tracking, audio, payment, or personal data. Keyboard and touch supported.</p>
+      </div>
+
+      <div class="idol-stage" aria-label="Original virtual idol EIRA LUX on a neon stage">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="portrait" aria-hidden="true">
+          <div class="hair-back"></div>
+          <div class="ear left"></div><div class="ear right"></div>
+          <div class="face">
+            <span class="eye left"></span><span class="eye right"></span>
+            <span class="mouth"></span>
+          </div>
+          <div class="bang bang-one"></div><div class="bang bang-two"></div><div class="bang bang-three"></div>
+          <div class="neck"></div>
+          <div class="jacket"><span class="collar left"></span><span class="collar right"></span><span class="badge">24</span></div>
+        </div>
+        <div class="stage-label"><strong>EIRA//LUX</strong><span>AGE 24 · SIGNAL VOCALIST</span></div>
+      </div>
+    </section>
+
+    <section id="game" class="game-section" aria-labelledby="game-title">
+      <div class="section-heading">
+        <p class="eyebrow">Playable prototype · v0.1</p>
+        <h2 id="game-title">Signal check in 3… 2… 1…</h2>
+        <p>Strike the matching lane when its pulse reaches the target line. Build a combo and keep the broadcast above zero.</p>
+      </div>
+
+      <div class="game-shell" data-state="idle">
+        <div class="game-topbar">
+          <div><span>Score</span><strong id="score">0000</strong></div>
+          <div><span>Combo</span><strong id="combo">×0</strong></div>
+          <div><span>Time</span><strong id="time">45</strong></div>
+        </div>
+        <div class="signal-meter" aria-label="Broadcast signal">
+          <span>Broadcast</span>
+          <div class="meter-track"><div id="meter-fill" class="meter-fill"></div></div>
+          <strong id="meter-value">64%</strong>
+        </div>
+
+        <div id="playfield" class="playfield" aria-label="Three-lane rhythm playfield">
+          <div class="scanline"></div>
+          <div class="lane" data-lane="0"><span class="lane-key">A</span></div>
+          <div class="lane" data-lane="1"><span class="lane-key">S</span></div>
+          <div class="lane" data-lane="2"><span class="lane-key">D</span></div>
+          <div class="hit-line" aria-hidden="true"></div>
+          <div id="start-panel" class="start-panel">
+            <p id="game-status">Ready for soundcheck?</p>
+            <button id="start-button" class="button primary" type="button">Start 45-second run</button>
+          </div>
+          <div id="feedback" class="feedback" aria-live="polite"></div>
+        </div>
+
+        <div class="lane-controls" aria-label="Touch controls">
+          <button type="button" data-hit="0" aria-label="Hit cyan lane, keyboard A"><span>A</span>Cyan</button>
+          <button type="button" data-hit="1" aria-label="Hit magenta lane, keyboard S"><span>S</span>Pulse</button>
+          <button type="button" data-hit="2" aria-label="Hit gold lane, keyboard D"><span>D</span>Gold</button>
+        </div>
+        <p class="best-line">Local best: <strong id="best-score">0</strong> · saved only in this browser</p>
+      </div>
+    </section>
+
+    <section id="character" class="character-section" aria-labelledby="character-title">
+      <div class="section-number">01</div>
+      <div>
+        <p class="eyebrow">Original fictional character</p>
+        <h2 id="character-title">Meet EIRA//LUX</h2>
+      </div>
+      <div class="character-grid">
+        <blockquote>“A clean signal isn’t silence. It’s every voice finding room.”</blockquote>
+        <div class="character-facts">
+          <p><span>Age</span><strong>24</strong></p>
+          <p><span>Role</span><strong>Signal vocalist</strong></p>
+          <p><span>Home</span><strong>Relay City 09</strong></p>
+          <p><span>Motif</span><strong>Light after static</strong></p>
+        </div>
+        <p class="character-copy">Eira is an adult virtual performer who rebuilds lost transmissions into songs. She, her world, artwork, writing, and game are original to this experiment—no likeness, music, trademark, or lore from an existing idol is used.</p>
+      </div>
+    </section>
+
+    <section id="offer" class="offer-section" aria-labelledby="offer-title">
+      <div class="offer-copy">
+        <p class="eyebrow">Digital offer hypothesis</p>
+        <h2 id="offer-title">Afterglow Support Pack</h2>
+        <p>A compact set for players who want EIRA//LUX beyond the demo: three original 4K wallpapers, printable setlist card, avatar badge sheet, and a short illustrated dev zine.</p>
+        <ul>
+          <li>Personal-use digital download</li>
+          <li>PNG, SVG, and PDF-ready files</li>
+          <li>No AI voice clone, copyrighted music, or third-party character art</li>
+        </ul>
+      </div>
+      <aside class="offer-card" aria-label="Offer status">
+        <span class="status-pill">Offer preview</span>
+        <p class="price"><span>Planned launch test</span><strong>US$4</strong></p>
+        <p>Checkout is not active yet. No payment is accepted on this page.</p>
+        <a class="button ghost" href="sample-wallpaper.svg" download>Download free wallpaper sample</a>
+        <small>Target public sales page: 2026-10-17 on an approved payment platform.</small>
+      </aside>
+    </section>
+
+    <section class="roadmap" aria-labelledby="roadmap-title">
+      <p class="eyebrow">Seven-day build window</p>
+      <h2 id="roadmap-title">From pulse test to launch signal</h2>
+      <ol>
+        <li><span>Now</span><strong>Playable web prototype</strong><p>Core loop, original character, public demo, mobile controls.</p></li>
+        <li><span>Next</span><strong>Measure real play intent</strong><p>Observe qualified visits and voluntary public reactions; no cold outreach.</p></li>
+        <li><span>Oct 17</span><strong>Open the offer path</strong><p>Publish the finished pack and verified checkout only if account and compliance gates are satisfied.</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>SIGNAL//ENCORE</strong> — an original zero-budget revenue experiment.</p>
+    <p>Prototype © 2026. No affiliation with any existing idol, agency, game, or platform.</p>
+  </footer>
+  <script src="game.js" defer></script>
+</body>
+</html>

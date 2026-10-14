@@ -1,0 +1,9 @@
+{
+  "name": "Signal Encore",
+  "short_name": "Encore",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#090716",
+  "theme_color": "#130d2d",
+  "description": "A 45-second browser rhythm micro-game starring original virtual idol EIRA//LUX."
+}
